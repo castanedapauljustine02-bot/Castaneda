@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class Castaneda1
+{
+   public static void main(String [] Args) {
+           
+   Scanner scanner = new Scanner(System.in);
+        int num = 0;
+
+        while (true) {
+            System.out.print("Enter a number between 1 and 100: ");
+
+            if (scanner.hasNextInt()) {
+                num = scanner.nextInt();
+
+                if (num >= 1 && num <= 100) {
+                    break; // valid number, exit loop
+                } else {
+                    System.out.println("That number is not between 1 and 100. Try again.");
+                }
+            } else {
+                System.out.println("That's not a valid number. Try again.");
+                scanner.next(); // clear invalid input
+            }
+        }
+    }
+}
