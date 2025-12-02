@@ -1,21 +1,28 @@
 public class Castaneda4
 {
-   public static void main(String [] Args) {
-       int[] numbers = {12, 5, 7, 30, 2, 18, 25};
+      public static void main(String[] args) {
 
-        int smallest = numbers[0];
-        int largest = numbers[0];
+        int[] arr = {5, 2, 9, 1, 7};
 
-        for (int i = 1; i < numbers.length; i++) {
-            if (numbers[i] < smallest) {
-                smallest = numbers[i];
+        System.out.print("Array: ");
+        for (int i=0;i<arr.length;i++) {
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println(); 
+
+        int min = arr[0];
+        int max = arr[0];
+
+        for (int j=0;j<arr.length;j++) {
+            if(arr[j] < min){
+                min = arr[j];
             }
-            if (numbers[i] > largest) {
-                largest = numbers[i];
+            if(arr[j] > max){
+                max = arr[j];
             }
         }
 
-        System.out.println("Smallest number: " + smallest);
-        System.out.println("Largest number: " + largest);
+        System.out.println("Smallest: " + min + ", Largest: " + max);
+        
     }
 }
