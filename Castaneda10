@@ -1,0 +1,20 @@
+public class Castaneda9
+{
+   public static void main(String [] Args) {
+           int[] numbers = {3, 7, 9, 10, 12, 5};
+        int index = -1;  // default if no even number is found
+
+        for (int i = 0; i < numbers.length; i++) {
+            if (numbers[i] % 2 == 0) {  // check if even
+                index = i;
+                break;  // stop at the first even number
+            }
+        }
+
+        if (index != -1) {
+            System.out.println("The first even number is at index: " + index);
+        } else {
+            System.out.println("No even number found in the array.");
+        }
+    }
+}
