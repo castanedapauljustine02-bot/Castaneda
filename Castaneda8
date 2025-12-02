@@ -1,16 +1,23 @@
 public class Castaneda8
 {
-   public static void main(String [] Args) {
-           int[] A = {1, 2, 3, 4, 5};
-        int[] B = new int[A.length];  // make sure B has the same length
+  public static void main(String[] args) {
+        int[] A = {1, 2, 3, 4, 5};
+        int[] B = new int[A.length]; 
+
+        System.out.print("Array A: ");
+        for (int i = 0; i < A.length; i++) {
+            System.out.print(A[i] + " ");
+        }
+        System.out.println();
 
         for (int i = 0; i < A.length; i++) {
-            B[i] = A[i];  // copy element by element
+            B[i] = A[i];
         }
 
-        // Print array B
-        for (int n : B) {
-            System.out.print(n + " ");
+        System.out.print("Array B after copying: ");
+        for (int i = 0; i < B.length; i++) {
+            System.out.print(B[i] + " ");
         }
+        System.out.println();
     }
 }
