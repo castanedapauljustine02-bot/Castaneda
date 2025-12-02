@@ -1,0 +1,16 @@
+public class Castaneda8
+{
+   public static void main(String [] Args) {
+           int[] A = {1, 2, 3, 4, 5};
+        int[] B = new int[A.length];  // make sure B has the same length
+
+        for (int i = 0; i < A.length; i++) {
+            B[i] = A[i];  // copy element by element
+        }
+
+        // Print array B
+        for (int n : B) {
+            System.out.print(n + " ");
+        }
+    }
+}
