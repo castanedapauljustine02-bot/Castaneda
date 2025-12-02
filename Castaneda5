@@ -1,0 +1,15 @@
+public class Castaneda5
+{
+   public static void main(String [] Args) {
+        int[] numbers = {3, 8, 7, 12, 5, 9};
+
+        int target = 7;
+
+        for (int i = 0; i < numbers.length; i++) {
+            if (numbers[i] == target) {
+                System.out.println("Value " + target + " found at index " + i);
+                break;  // stop the loop early
+            }
+        }
+    }
+}
